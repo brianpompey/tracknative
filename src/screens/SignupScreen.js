@@ -35,9 +35,11 @@ const SignupScreen = ({ navigation }) => {
     )
 };
 
-// SignupScreen.navigationOptions = {
-//     headerMode: 'none'
-// };
+SignupScreen.navigationOptions = () => {
+    return {
+        header: () => false
+    }
+};
 
 const styles = StyleSheet.create({
     container: {
