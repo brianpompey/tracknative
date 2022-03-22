@@ -14,10 +14,10 @@ const switchNavigator = createSwitchNavigator({
   loginFlow: createStackNavigator({
     Signup: SignupScreen,
     Signin: SigninScreen
+  },
+  {
+    headerMode: 'none'
   }),
-  // {
-  //   headerMode: 'none'
-  // }),
   mainFlow: createBottomTabNavigator({
     trackListFlow: createStackNavigator({
       TrackList: TrackListScreen,
