@@ -20,7 +20,8 @@ const SignupScreen = ({ navigation }) => {
                 autoCorrect={false} 
             />
             <Spacer />
-            <Input 
+            <Input
+                secureTextEntry 
                 label="Password"
                 value={password}
                 onChangeText={setPassword}
